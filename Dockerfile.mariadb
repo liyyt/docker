@@ -1,0 +1,5 @@
+FROM mariadb:latest
+
+# https://hub.docker.com/_/mariadb/
+# https://github.com/docker-library/mariadb/blob/master/10.1/Dockerfile
+MAINTAINER Aaron Bolanos <aaron@liyyt.com>

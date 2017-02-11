@@ -1,0 +1,5 @@
+FROM haproxy:alpine
+
+# https://hub.docker.com/_/haproxy/
+# https://github.com/docker-library/haproxy/blob/master/1.6/alpine/Dockerfile
+MAINTAINER Aaron Bolanos <aaron@liyyt.com>

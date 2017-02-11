@@ -1,0 +1,5 @@
+FROM memcached:alpine
+
+# https://hub.docker.com/_/memcached/
+# https://github.com/docker-library/memcached/blob/master/alpine/Dockerfile
+MAINTAINER Aaron Bolanos <aaron@liyyt.com>

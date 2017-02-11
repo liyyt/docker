@@ -1,0 +1,113 @@
+version: '2.1'
+
+services:
+
+  alpine:
+    image: liyyt/alpine:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.alpine
+
+  haproxy:
+    image: liyyt/haproxy:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.haproxy
+
+  mariadb:
+    image: liyyt/mariadb:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.mariadb
+
+  memcached:
+    image: liyyt/memcached:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.memcached
+
+  nginx:
+    image: liyyt/nginx:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+
+  node:
+    image: liyyt/node:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 7.5.0
+
+  node-7-5:
+    image: liyyt/node:7.5
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 7.5.0
+
+  node-7-4:
+    image: liyyt/node:7.4
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 7.4.0
+
+  node-7-3:
+    image: liyyt/node:7.3
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 7.3.0
+
+  node-7-2:
+    image: liyyt/node:7.2
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 7.2.1
+
+  node-6-9:
+    image: liyyt/node:6.9
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 6.9.5
+
+  node-5-11:
+    image: liyyt/node:5.11
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 5.11.1
+
+  php-fpm:
+    image: liyyt/php-fpm:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.php-fpm
+
+  postgres:
+    image: liyyt/postgres:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.postgres
+
+  redis:
+    image: liyyt/redis:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.redis
+
+  traefik:
+    image: liyyt/traefik:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.traefik

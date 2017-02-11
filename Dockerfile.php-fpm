@@ -1,0 +1,5 @@
+FROM php:alpine
+
+# https://hub.docker.com/_/php/
+# https://github.com/docker-library/php/blob/master/7.0/alpine/Dockerfile
+MAINTAINER Aaron Bolanos <aaron@liyyt.com>

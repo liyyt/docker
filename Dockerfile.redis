@@ -1,0 +1,5 @@
+FROM redis:alpine
+
+# https://hub.docker.com/_/redis/
+# https://github.com/docker-library/redis/blob/master/3.2/alpine/Dockerfile
+MAINTAINER Aaron Bolanos <aaron@liyyt.com>

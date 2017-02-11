@@ -1,0 +1,5 @@
+FROM postgres:latest
+
+# https://hub.docker.com/_/postgres/
+# https://github.com/docker-library/postgres/blob/master/9.6/Dockerfile
+MAINTAINER Aaron Bolanos <aaron@liyyt.com>
